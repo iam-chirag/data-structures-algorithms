@@ -107,7 +107,7 @@ class NQueens:
 
 all_ans = []
 all_solution = []
-no_of_queen = 4
+no_of_queen = 8
 
 for row in range(0, no_of_queen):
     for col in range(0, no_of_queen):
