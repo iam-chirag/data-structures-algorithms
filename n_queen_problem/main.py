@@ -5,7 +5,7 @@ class NQueens:
         self.n = n
         self.chess_table = [[0 for _ in range(n)] for _ in range(n)]
 
-    def get_ans(self):
+    def get_table(self):
         return self.chess_table
 
     def check_col(self, col_index):
@@ -119,7 +119,7 @@ for row in range(0, no_of_queen):
         print(f"VALID {ans}")
         if ans:
             queens.print_queens()
-            solution = queens.get_ans()
+            solution = queens.get_table()
             if solution not in all_solution:
                 all_solution.append(solution)
                 all_ans.append(ans)
